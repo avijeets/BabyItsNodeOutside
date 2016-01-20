@@ -59,7 +59,16 @@ function printMessage(weather) {
 	stateOfUSA = stateOfUSA.slice(2);
 	stateOfUSA = stateOfUSA.slice(0,-2);
 	console.log("The weather in " + cityOfState + ", " + stateOfUSA + " currently is " + weather.currently.summary.toLowerCase() + " and " + Math.round(weather.currently.temperature) + "\xB0 F.");
-	
+	if ((Math.round(weather.currently.temperature)) > 110)
+		console.log("Stay inside, it's melting!");
+	else if ((Math.round(weather.currently.temperature)) > 80)
+		console.log("It's warm out there! Wear short-sleeves and sandals.");
+	else if ((Math.round(weather.currently.temperature) < 50))
+		console.log("I'd wear a jacket if I were you!");
+	else if ((Math.round(weather.currently.temperature)) > 30)
+		console.log("Wear gloves out there! It's gonna be freezing.");
+	else
+			console.log("Weather out of range somehow, stay inside and play Fallout 4.");
 }
 module.exports = {
 	getZipCoordinates: getZipCoordinates,
