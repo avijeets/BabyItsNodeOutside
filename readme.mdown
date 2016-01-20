@@ -1,0 +1,12 @@
+# Baby It's Node Outside
+
+Simple CLI app written in Node.js that will read a zipcode, get weather using [forecast.io's API](http://developer.forecast), and recommend what to wear depending on the weather.
+
+Installation
+=====
+
+First off, get your own key from forecast.io
+
+Once you have that, run it by:
+
+	node app.js ZIP_CODE
