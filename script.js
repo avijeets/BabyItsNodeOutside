@@ -17,7 +17,7 @@ function getZipCoordinates(zip) {
 
 			lon = lon.slice(2);
 			lon = lon.slice(0,-3);
-			
+
 			finishedURL = "https://api.forecast.io/forecast/" + API_KEY + "/" + lat + "," + lon;
 			break;
 		}
@@ -35,13 +35,13 @@ function getWeather(finishedURL) {
 				try {
 					var weather = JSON.parse(body);
 					printMessage(weather);
-				} 
+				}
 				catch (error) {
 					errorMessage(error);
 				}
-			} 
+			}
 			else {
-				errorMessage({message: "Searching for  " + zipcode + " weather cause an error. (" + http.STATUS_CODES[response.statusCode] + ")"});
+				errorMessage({message: "Searching for " + zipcode + " weather cause an error. (" + http.STATUS_CODES[response.statusCode] + ")"});
 			}
 		});
 	});
