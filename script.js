@@ -60,7 +60,7 @@ function printMessage(weather) {
 	stateOfUSA = stateOfUSA.slice(0,-2);
 	console.log("The weather in " + cityOfState + ", " + stateOfUSA + " currently is " + weather.currently.summary.toLowerCase() + " and " + Math.round(weather.currently.temperature) + "\xB0 F.");
 	if ((Math.round(weather.currently.temperature)) > 110)
-		console.log("Stay inside, it's melting!");
+		console.log("Stay inside, you'll melt out there!");
 	else if ((Math.round(weather.currently.temperature)) > 80)
 		console.log("It's warm out there! Wear short-sleeves and sandals.");
 	else if ((Math.round(weather.currently.temperature) < 50))
