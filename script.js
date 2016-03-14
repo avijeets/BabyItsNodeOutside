@@ -68,9 +68,9 @@ function printMessage(weather) {
 	else if ((Math.round(weather.currently.temperature)) > 30)
 		console.log("Wear gloves out there! It's gonna be freezing.");
 	else
-			console.log("Weather out of range somehow, stay inside and play Fallout 4.");
+		console.log("Weather out of range somehow, stay inside and read other people's code.");
 }
 module.exports = {
 	getZipCoordinates: getZipCoordinates,
-	zipcode: 		   zipcode
+	zipcode: zipcode
 };
