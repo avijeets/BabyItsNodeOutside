@@ -1,6 +1,6 @@
-# Baby It's Node Outside
+# WhatToWear
 
-Simple CLI app written in Node.js that will read a zipcode, get weather using [forecast.io's API](http://developer.forecast.io), and recommend what to wear depending on the weather.
+Simple CLI script, written with JS, that will read a zipcode, get weather using [forecast.io's API](http://developer.forecast.io), and recommend what to wear depending on the weather.
 
 Installation
 =====
